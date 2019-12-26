@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Terrain Generation</title>
+    <title>Three js sketches</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
     <script src="js/perlin.js"></script>
     <style>
@@ -16,8 +16,53 @@
         height: 100%;
       }
     </style>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">ThreeJS Sketches</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active" onclick="FrontEnd.changePage('home')">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item" onclick="FrontEnd.changePage('terrain')">
+            <a class="nav-link" href="#"
+              >Terrain Generation
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home">HOME PAGE SHALL BE FILLED IN LATER</div>
+    <div id="terrain" class="hide">
+      <div id="terrain-canvas-area"></div>
+      Information for this shall be added in here LATER
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>
